@@ -9,11 +9,14 @@ Effective inventory and sales management are critical for optimizing profitabili
 ●	Assess inventory turnover to reduce holding costs and improve efficiency. 
 ●	Investigate the profitability variance between high-performing and low-performing vendors. 
 
+
 # Exploratory Data Analysis Insights  
 
 Summary Statistics 
-    
-Negative & Zero Values: 
+<img width="975" height="498" alt="image" src="https://github.com/user-attachments/assets/091fe2c1-ced4-40f2-8ec9-ae918ad94554" />
+<img width="975" height="645" alt="image" src="https://github.com/user-attachments/assets/4463331e-2238-466d-83c0-92e9c8a47971" />
+
+# Negative & Zero Values: 
 Gross Profit: Minimum of -52,002.78, indicating potential losses due to high costs or heavy discounts. This could be due to selling products at lower prices than their purchase costs. 
 Profit Margin: Has a minimum of -∞, which suggests instances where revenue is zero or even lower than the total cost, leading to extreme negative profit margins. 
 Total Sales Quantity & Sales Dollars: Some products show zero sales, indicating they were purchased but never sold. These may be slow-moving or obsolete stock, leading to inventory inefficiencies. 
@@ -28,17 +31,9 @@ To enhance the reliability of the insights, we removed inconsistent data points 
 ●	Profit Margin ≤ 0 (to ensure analysis focuses on profitable transactions). 
 ●	Total Sales Quantity = 0 (to eliminate inventory that was never sold). 
  
- 
- 
- 
- 
- 
- 
- 
- 
- 
 # Correlation Insights 
-  
+  <img width="983" height="733" alt="image" src="https://github.com/user-attachments/assets/3ed02050-b54e-4ac4-8e93-65863f552f52" />
+
 Purchase Price vs. Total Sales Dollars & Gross Profit: Weak correlation (-0.012 and -0.016), indicating that price variations do not significantly impact sales revenue or profit. 
 Total Purchase Quantity vs. Total Sales Quantity: Strong correlation (0.999), confirming efficient inventory turnover. 
 Profit Margin vs. Total Sales Price: Negative correlation (-0.179), suggesting increasing sales prices may lead to reduced margins, possibly due to competitive pricing pressures. 
@@ -46,23 +41,31 @@ Stock Turnover vs. Gross Profit & Profit Margin: Weak negative correlation (-0.0
  
 # Research Questions & Key Findings 
 1. Brands for Promotional or Pricing Adjustments 
-  
+  <img width="619" height="505" alt="image" src="https://github.com/user-attachments/assets/ad8ecbf1-401b-4dbf-9f4f-8ff173cdfd9c" />
+
 198 brands exhibit lower sales but higher profit margins, which could benefit from targeted marketing, promotions, or price optimizations to increase volume without compromising profitability. 
+<img width="739" height="475" alt="image" src="https://github.com/user-attachments/assets/ea08113b-98c6-4f46-a45a-7fcd45fa7c50" />
+
   
-2. Top Vendors by Sales & Purchase Contribution 
+
+2. Top Vendors by Sales & Purchase Contribution
+
 The top 10 vendors contribute 65.69% of total purchases, while the remaining vendors contribute only 34.31%. This over-reliance on a few vendors may introduce risks such as supply chain disruptions, indicating a need for diversification. 
-  
+     <img width="891" height="548" alt="image" src="https://github.com/user-attachments/assets/00b2db43-8dd9-4a3c-af5a-28933d41fb1f" />
+
 3. Impact of Bulk Purchasing on Cost Savings 
 Vendors buying in large quantities receive a 72% lower unit cost ($10.78 per unit vs. higher unit costs in smaller orders). 
 Bulk pricing strategies encourage larger orders, increasing total sales while maintaining profitability. 
-  
+ <img width="464" height="148" alt="image" src="https://github.com/user-attachments/assets/f76b0436-be94-432a-ad74-6df02a03a302" />
+ 
  
  
 4. Identifying Vendors with Low Inventory Turnover 
 Total Unsold Inventory Capital: $2.71M 
 Slow-moving inventory increases storage costs, reduces cash flow efficiency, and affects overall profitability. 
 Identifying vendors with low inventory turnover enables better stock management, minimizing financial strain. 
-  
+  <img width="937" height="428" alt="image" src="https://github.com/user-attachments/assets/1a982fae-0fae-4dc4-9630-132e402b85f7" />
+
  
 5. Profit Margin Comparison: High vs. Low-Performing Vendors 
 Top Vendors' Profit Margin (95% CI): (30.74%, 31.61%), Mean: 31.17% 
@@ -71,7 +74,8 @@ Low-performing vendors maintain higher margins but struggle with sales volumes, 
 Actionable Insights: 
 ●	Top-performing vendors: Optimize profitability by adjusting pricing, reducing operational costs, or offering bundled promotions. 
 ●	Low-performing vendors: Improve marketing efforts, optimize pricing strategies, and enhance distribution networks. 
-  
+  <img width="975" height="517" alt="image" src="https://github.com/user-attachments/assets/4f138f1a-ade3-4748-bb3f-4e21a1146a43" />
+
 6. Statistical Validation of Profit Margin Differences 
 Hypothesis Testing: 
 H₀ (Null Hypothesis): No significant difference in profit margins between top and low-performing vendors. 
